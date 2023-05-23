@@ -1,4 +1,4 @@
-<?
+<?php
   function alphaToDec($val){
     $pow=0;
     $res=0;
