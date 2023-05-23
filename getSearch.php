@@ -3,10 +3,10 @@
   $string = mysqli_real_escape_string($link, $_GET['search']);
   $loggedinUserName = '';
   $passhash = '';
-  $page = mysqli_real_escape_string($link, $_GET['page']);
+  $page = (int)mysqli_real_escape_string($link, $_GET['page']);
   $exact = mysqli_real_escape_string($link, $_GET['exact']);
   $allWords = mysqli_real_escape_string($link, $_GET['allWords']);
-  $overrideMaxResults = mysqli_real_escape_string($link, $_GET['maxResultsPerPage']);
+  $overrideMaxResults = (int)mysqli_real_escape_string($link, $_GET['maxResultsPerPage']);
   if($overrideMaxResults) $maxResultsPerPage = $overrideMaxResults;
 
   if($exact){

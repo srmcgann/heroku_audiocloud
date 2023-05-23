@@ -12,7 +12,7 @@ if ($tmpFilePath != ""){
     rename($tmpFilePath, $newFilePath);
     chmod($newFilePath, 0755);
     require('db.php');
-    $userID = mysqli_real_escape_string($link, $_POST['userID']);
+    $userID = (int)mysqli_real_escape_string($link, $_POST['userID']);
     $author = mysqli_real_escape_string($link, $_POST['author']);
     $trackName = mysqli_real_escape_string($link, $_POST['trackName']);
     $description = '';

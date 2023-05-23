@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 require('db.php');
   $data = json_decode(file_get_contents('php://input'));
-  $userID = mysqli_real_escape_string($link, $data->{'userID'});
+  $userID = (int)mysqli_real_escape_string($link, $data->{'userID'});
   $overrideMaxResults = (int)mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
   if($overrideMaxResults) $maxResultsPerPage = $overrideMaxResults;
 
