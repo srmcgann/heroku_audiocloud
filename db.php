@@ -9,7 +9,7 @@ $db_ = substr($url["path"], 1);
   $db_user=$username_;
   $db_pass=$password_;
   $db_host=$server_;
-  $db="videodemos";
+  $db="heroku_b5436f230534a67";
   $demoSandbox='demo.dweet.net';
   $maxResultsPerPage = 6;
   
