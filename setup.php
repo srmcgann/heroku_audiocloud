@@ -3,7 +3,7 @@
   require('db.php');
   $sql = '
 
-
+START_TRANSACTION;
 
 -- MySQL dump 10.13  Distrib 8.0.32, for Linux (x86_64)
 --
@@ -117,7 +117,7 @@ CREATE TABLE `audiocloudTracks` (
 -- Dumping data for table `audiocloudTracks`
 --
 
-
+COMMIT;
 ';
 
   mysqli_multi_query($link, $sql);
