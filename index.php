@@ -1,5 +1,4 @@
 <?php
-  ini_set('short_open_tag','1'));
   function alphaToDec($val){
     $pow=0;
     $res=0;
