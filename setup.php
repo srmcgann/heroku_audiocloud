@@ -120,6 +120,6 @@ CREATE TABLE `audiocloudTracks` (
 
 ';
 
-  mysql_query($link, $sql);
+  mysqli_query($link, $sql);
   echo 'done...';
 ?>
