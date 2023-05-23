@@ -5,7 +5,6 @@ $username_ = $url["user"];
 $password_ = $url["pass"];
 $db_ = substr($url["path"], 1);
 
-
   $db_user=$username_;
   $db_pass=$password_;
   $db_host=$server_;
