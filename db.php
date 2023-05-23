@@ -18,6 +18,7 @@ $db_ = substr($url["path"], 1);
     $baseAssetsURL = 'http://local.assets.whitehotrobot.com';
   }else{
     $baseURL='audiocloud.dweet.net';
+    $baseAssetsURL = 'https://audiocloud.dweet.net';
   }
   
   $baseFullURL= ($local ? 'http://' : 'https://') . $baseURL;
