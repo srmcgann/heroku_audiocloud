@@ -1,6 +1,6 @@
-<?
+<?php
 putenv('TMPDIR=/tmp');
-$targetDir = '/app/audio/';
+$targetDir = './audio/';
 $tmpFilePath = $_FILES['file']['tmp_name'];
 $success = false;
 if ($tmpFilePath != ""){
