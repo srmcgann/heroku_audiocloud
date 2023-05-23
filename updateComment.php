@@ -4,7 +4,7 @@
   $userName = mysqli_real_escape_string($link, $data->{'userName'});
   $passhash = mysqli_real_escape_string($link, $data->{'passhash'});
   $comment = mysqli_real_escape_string($link, $data->{'comment'});
-  $commentID = (int)mysqli_real_escape_string($link, $data->{'commentID'});
+  $commentID = mysqli_real_escape_string($link, $data->{'commentID'});
   $sql = 'SELECT * FROM users WHERE name LIKE "'. $userName .'" AND passhash = "'.$passhash.'";';
   $res = mysqli_query($link, $sql);
   $success = false;

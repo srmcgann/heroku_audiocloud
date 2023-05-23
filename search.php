@@ -4,10 +4,10 @@
   $string = mysqli_real_escape_string($link, $data->{'string'});
   $loggedinUserName = mysqli_real_escape_string($link, $data->{'loggedinUserName'});
   $passhash = mysqli_real_escape_string($link, $data->{'passhash'});
-  $page = (int)mysqli_real_escape_string($link, $data->{'page'});
+  $page = mysqli_real_escape_string($link, $data->{'page'});
   $exact = mysqli_real_escape_string($link, $data->{'exact'});
   $allWords = mysqli_real_escape_string($link, $data->{'allWords'});
-  $overrideMaxResults = (int)mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
+  $overrideMaxResults = mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
   if($overrideMaxResults) $maxResultsPerPage = $overrideMaxResults;
 
   if($exact){

@@ -99,6 +99,6 @@
       $track['comments'][] = mysqli_fetch_assoc($res);
     }
   }
-  echo json_encode([$tracks, $totalPages, $page, $totalRecords]);
+  echo json_encode([$tracks, $totalPages, $page, $totalRecords, $sql1]);
 ?>
 

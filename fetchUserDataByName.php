@@ -2,10 +2,10 @@
   require('db.php');
   $data = json_decode(file_get_contents('php://input'));
   $name = mysqli_real_escape_string($link, $data->{'name'});
-  $page = (int)mysqli_real_escape_string($link, $data->{'page'});
+  $page = mysqli_real_escape_string($link, $data->{'page'});
   $loggedinUserName = mysqli_real_escape_string($link, $data->{'loggedinUserName'});
   $passhash = mysqli_real_escape_string($link, $data->{'passhash'});
-  $overrideMaxResults = (int)mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
+  $overrideMaxResults = mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
   if($overrideMaxResults) $maxResultsPerPage = $overrideMaxResults;
 
 $admin = false;

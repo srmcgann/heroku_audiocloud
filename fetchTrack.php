@@ -5,7 +5,7 @@
 
   $userName = mysqli_real_escape_string($link, $data->{'userName'});
   $passhash = mysqli_real_escape_string($link, $data->{'passhash'});
-  $trackID = (int)mysqli_real_escape_string($link, $data->{'trackID'});
+  $trackID = mysqli_real_escape_string($link, $data->{'trackID'});
   $sql='SELECT * FROM audiocloudTracks WHERE id = ' . $trackID;
   $res = mysqli_query($link, $sql);
   $row=mysqli_fetch_assoc($res);
