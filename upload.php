@@ -21,6 +21,6 @@ if ($tmpFilePath != ""){
     mysqli_query($link, $sql);
     $success = true;
   }
-  return json_encode($success);
+  return json_encode($success,$sql);
 }
 ?>
