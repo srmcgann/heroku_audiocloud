@@ -18,7 +18,7 @@
     $baseAssetsURL = 'http://local.assets.whitehotrobot.com';
   }else{
     $baseURL='audiocloud.dweet.net';
-    $baseAssetsURL = 'https://audiocloud.dweet.net';
+    $baseAssetsURL = '/';
   }
   
   $baseFullURL= ($local ? 'http://' : 'https://') . $baseURL;
