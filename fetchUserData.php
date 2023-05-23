@@ -9,7 +9,7 @@ require('db.php');
   $overrideMaxResults = (int)mysqli_real_escape_string($link, $data->{'maxResultsPerPage'});
   if($overrideMaxResults) $maxResultsPerPage = $overrideMaxResults;
 
-  $page = mysqli_real_escape_string($link, $data->{'page'});
+  $page = (int)mysqli_real_escape_string($link, $data->{'page'});
   $start = $maxResultsPerPage * $page;
 
   $sql='SELECT * FROM users WHERE id = ' . $userID;
