@@ -6,4 +6,5 @@ $password_ = $url["pass"];
 $db_ = substr($url["path"], 1);
 echo "user: $username_<br>";
 echo "pass: $password_<br>";
+echo "pwd: " . shell_exec('pwd') . '<br>';
 ?>
