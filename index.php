@@ -1,5 +1,6 @@
 <?php
-function alphaToDec($val){
+  ini_set('short_open_tag','1'));
+  function alphaToDec($val){
     $pow=0;
     $res=0;
     while($val!=""){
