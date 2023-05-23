@@ -9,8 +9,7 @@ $db_ = substr($url["path"], 1);
   $db_user=$username_;
   $db_pass=$password_;
   $db_host=$server_;
-  $db="heroku_b5436f230534a67";
-  $demoSandbox='demo.dweet.net';
+  $db=$db_;
   $maxResultsPerPage = 6;
   
   
@@ -20,7 +19,6 @@ $db_ = substr($url["path"], 1);
     $baseAssetsURL = 'http://local.assets.whitehotrobot.com';
   }else{
     $baseURL='audiocloud.dweet.net';
-    $baseAssetsURL = 'https://assets.dweet.net';
   }
   
   $baseFullURL= ($local ? 'http://' : 'https://') . $baseURL;
